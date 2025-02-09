@@ -39,6 +39,8 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
+pip install pydantic-settings
+
 ###5Crear la base de Datos
 Con el script de la base de datos que se encuentra en el backend
 
@@ -46,8 +48,9 @@ Con el script de la base de datos que se encuentra en el backend
 
 contraseña y usuario, son los de tu mysql local por ejemplo usuario root
 
-echo DATABASE_URL=mysql+mysqlconnector://Usuario:Contraseña@localhost/4thewords_prueba_gerardo_martinez > .env
+DATABASE_URL=mysql+mysqlconnector://Usuario:Contraseña@localhost/4thewords_prueba_gerardo_martinez 
 
+lo anterior se agrega al .env
 
 ### Ejecutar el servidor de desarrollo
 correr especificamente con este, por el puerto 8080
